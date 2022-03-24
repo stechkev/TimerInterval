@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1737A6F327ECECAB00DB1EE6 /* TimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737A6F227ECECAB00DB1EE6 /* TimerService.swift */; };
+		1737A6F427ECECAB00DB1EE6 /* TimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737A6F227ECECAB00DB1EE6 /* TimerService.swift */; };
 		17471E4527ECC3FF005A6E28 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17471E4427ECC3FF005A6E28 /* Tests_iOS.swift */; };
 		17471E4727ECC3FF005A6E28 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17471E4627ECC3FF005A6E28 /* Tests_iOSLaunchTests.swift */; };
 		17471E5127ECC3FF005A6E28 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17471E5027ECC3FF005A6E28 /* Tests_macOS.swift */; };
 		17471E5327ECC3FF005A6E28 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17471E5227ECC3FF005A6E28 /* Tests_macOSLaunchTests.swift */; };
 		17471E5427ECC3FF005A6E28 /* TimerIntervalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17471E2C27ECC3FE005A6E28 /* TimerIntervalApp.swift */; };
 		17471E5527ECC3FF005A6E28 /* TimerIntervalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17471E2C27ECC3FE005A6E28 /* TimerIntervalApp.swift */; };
-		17471E5627ECC3FF005A6E28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17471E2D27ECC3FE005A6E28 /* ContentView.swift */; };
-		17471E5727ECC3FF005A6E28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17471E2D27ECC3FE005A6E28 /* ContentView.swift */; };
+		17471E5627ECC3FF005A6E28 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17471E2D27ECC3FE005A6E28 /* TimerView.swift */; };
+		17471E5727ECC3FF005A6E28 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17471E2D27ECC3FE005A6E28 /* TimerView.swift */; };
 		17471E5827ECC3FF005A6E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17471E2E27ECC3FF005A6E28 /* Assets.xcassets */; };
 		17471E5927ECC3FF005A6E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17471E2E27ECC3FF005A6E28 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -37,8 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1737A6F227ECECAB00DB1EE6 /* TimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerService.swift; sourceTree = "<group>"; };
 		17471E2C27ECC3FE005A6E28 /* TimerIntervalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerIntervalApp.swift; sourceTree = "<group>"; };
-		17471E2D27ECC3FE005A6E28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		17471E2D27ECC3FE005A6E28 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		17471E2E27ECC3FF005A6E28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17471E3327ECC3FF005A6E28 /* TimerInterval.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerInterval.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17471E3927ECC3FF005A6E28 /* TimerInterval.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerInterval.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,8 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				17471E2C27ECC3FE005A6E28 /* TimerIntervalApp.swift */,
-				17471E2D27ECC3FE005A6E28 /* ContentView.swift */,
+				17471E2D27ECC3FE005A6E28 /* TimerView.swift */,
 				17471E2E27ECC3FF005A6E28 /* Assets.xcassets */,
+				1737A6F227ECECAB00DB1EE6 /* TimerService.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -299,7 +303,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17471E5627ECC3FF005A6E28 /* ContentView.swift in Sources */,
+				1737A6F327ECECAB00DB1EE6 /* TimerService.swift in Sources */,
+				17471E5627ECC3FF005A6E28 /* TimerView.swift in Sources */,
 				17471E5427ECC3FF005A6E28 /* TimerIntervalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,7 +313,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17471E5727ECC3FF005A6E28 /* ContentView.swift in Sources */,
+				1737A6F427ECECAB00DB1EE6 /* TimerService.swift in Sources */,
+				17471E5727ECC3FF005A6E28 /* TimerView.swift in Sources */,
 				17471E5527ECC3FF005A6E28 /* TimerIntervalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,7 +488,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -512,7 +518,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
