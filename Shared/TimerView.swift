@@ -9,12 +9,12 @@ import SwiftUI
 struct TimerView: View {
     @State private var currentDate = Date()
     @State private var timeInterval = 0
+    @State private var customTime = ""
     @ObservedObject var timerService = TimerService()
     
     var body: some View {
         VStack {
             HStack {
-                //Button("Start") {print("hello")}.buttonStyle(.bordered)
                 Button("10s") {
                     timerService.setTime(10)
                     timerService.startTimer()
@@ -32,6 +32,19 @@ struct TimerView: View {
                     timerService.stopTimer()
                 }.buttonStyle(.bordered)
             }
+            HStack {
+                TextField(
+                    "Enter Time",
+                    text: $customTime
+                )
+                .onSubmit {
+                    timerService.setTime(Double(customTime) ?? 0)
+                    timerService.startTimer()
+                }
+                .textInputAutocapitalization(.never)
+                .disableAutocorrection(true)
+                .textFieldStyle(.roundedBorder)
+            }.padding()
             ZStack {
                 Text(timerService.hasStarted ? "\(Int(timerService.timeRemaining ))" : "Select a time").fontWeight(.heavy)
                 .onReceive(timerService.timer) { _ in

@@ -12,7 +12,7 @@ class TimerService: ObservableObject {
     @Published var timeRemaining = Double()
     @Published var totalTime = Double()
     @Published var hasStarted = false
-    @State var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     func setTime(_ seconds: Double) {
         timeRemaining = seconds
